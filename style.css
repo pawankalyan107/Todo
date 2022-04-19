@@ -1,0 +1,109 @@
+header {
+     background-image: linear-gradient(to bottom, white, gold); 
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;  
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%; 
+    margin:0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight:900;
+    color: gold;
+    text-align: center;
+} 
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: 'Fira sans', sans-serif;
+}
+#new-task-form{
+    display:flex;
+    justify-content: center;
+    max-width: 700px;
+    width:100%;
+    margin:0 auto;
+}
+input, button{
+    appearance:none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#new-task-input{
+    flex: 1 1 0%;
+    background-color: #111827;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: #EEE;
+    font-size: 1.25rem;
+}
+#new-task-input::placeholder {
+    color: #6B72;
+}
+.new-task-submit {
+    color:#EC4899; 
+    font-size:1.25rem;
+    font-weight:700;
+    cursor: pointer
+}
+.new-task-submit:active {
+    opacity:0.6;
+}
+main{
+    flex:1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.task-list {
+    padding: 1rem;
+}
+.task-list h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #6B72;
+    margin-bottom: 1rem;
+}
+
+.task p{
+    color: black
+}              
+.task {
+    display:flex;
+    justify-content: space-between;
+    background-color:  #37fdf3;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    transition:0.4s;
+}
+.task .btns{
+    display: flex;
+}
+.task button{
+    cursor:pointer;
+    font-size: 1.125rem;
+    font-weight:700;
+    text-transform: uppercase;
+    transition:0.4s;
+    color:grey
+}
+.task .delete{
+    color: red;
+}
+.task button:hover{
+    background-image: linear-gradient(to bottom, purple, gold); 
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;  
+}
+.textData{
+    width: 300px;
+    word-wrap: break-word;
+}
+
+
